@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     tools:context=".Activities.Settings">
+
+<LinearLayout
+    android:id="@+id/header"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="#105711 "
+    android:orientation="horizontal"
+    tools:layout_editor_absoluteX="0dp"
+    android:gravity="center_vertical"
+    android:weightSum="100">
+
+    <ImageView
+        android:id="@+id/Picture"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@drawable/web_hi_res_512" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Account Settings"
+        android:textColor="@color/white"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:textSize="27sp"
+        android:textAppearance="@android:style/TextAppearance.StatusBar.Title"/>
+
+
+</LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/AccountSummary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="5dp"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Account Details"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:background="#105711"
+            android:textStyle="bold|italic" />
+
+
+        <TextView
+            android:id="@+id/placeholderStudentId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/Title"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:textColor="@color/white"
+            android:background="@color/colorAqua"
+            android:text="Student ID"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/StudentId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bookTitle"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignBaseline="@+id/placeholderStudentId"
+            android:layout_toRightOf="@id/placeholderStudentId"
+            android:text="@string/PlaceHolder"
+            android:textStyle="bold|italic"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+        <TextView
+            android:id="@+id/placeholderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/placeholderStudentId"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@color/colorPrimary"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="1dp"
+            android:text="Full Name"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/StudentId"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignBaseline="@+id/placeholderName"
+            android:layout_toRightOf="@id/placeholderName"
+            android:text="@string/PlaceHolder"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/placeHolderEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/placeholderName"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Email "
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="2dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+            android:background="@color/orange"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+
+            />
+        <TextView
+            android:id="@+id/userEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bookCategory"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/placeHolderEmail"
+            android:layout_alignBaseline="@+id/placeHolderEmail"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+            android:text="@string/PlaceHolder"
+            android:textStyle="bold|italic"
+            />
+        <TextView
+            android:id="@+id/placeHolderGroupLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/placeHolderEmail"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Group"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="2dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+            android:background="@color/colorBlueJeans"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+
+            />
+        <TextView
+            android:id="@+id/lblGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userEmail"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/placeHolderGroupLbl"
+            android:layout_alignBaseline="@+id/placeHolderGroupLbl"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+            android:text="@string/PlaceHolder"
+            android:textStyle="bold|italic"
+            />
+
+        <TextView
+            android:id="@+id/spinnerInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Title"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="Field to update: "
+            android:textStyle="bold"/>
+        <Spinner
+            android:id="@+id/optionSpinner"
+            android:text="Select an Option"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinnerInfo"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AccountSummary"
+        android:padding="8dp"
+        android:layout_centerInParent="true">
+
+        <EditText
+            android:id="@+id/inputField"
+            android:hint="Password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundcolor"
+            android:padding="5dp"
+            android:maxLength="40"
+            android:layout_centerHorizontal="true"
+            />
+
+        <EditText
+            android:id="@+id/confirmPassword"
+            android:hint="Confirm New Password"
+            android:layout_below="@id/inputField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundcolor"
+            android:padding="5dp"
+            android:maxLength="40"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"
+            android:layout_centerHorizontal="true"
+            android:visibility="visible"/>
+
+        <Button
+            android:id="@+id/UpdateInfo"
+            android:text="Submit"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:background="@drawable/buttonshape"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/confirmPassword"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

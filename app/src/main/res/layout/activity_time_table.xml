@@ -1,0 +1,930 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical|center_horizontal"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+           />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:animateLayoutChanges="true"
+        android:background="#105711 "
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:weightSum="1">
+
+
+        <TextView
+            android:id="@+id/timeTableTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/TimeTable"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:layout_marginLeft="8dp"
+            />
+
+        <TextView
+            android:id="@+id/PlaceHolderGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:layout_marginLeft="10dp"
+            android:text="PlaceHolderGroup"/>
+
+    </LinearLayout>
+
+
+ <View
+     android:id="@+id/Axis0"
+     android:layout_width="match_parent"
+     android:layout_height="1dp"
+     android:background="@color/black"
+     android:layout_below="@+id/linearLayoutTop"
+     android:layout_alignStart="@+id/Axis0y0"
+     android:layout_alignLeft="@+id/Axis0y0"
+     android:layout_toStartOf="@id/Axis7y7"
+     android:layout_toLeftOf="@+id/Axis7y7"
+     android:layout_marginTop="5dp"
+     />
+
+    <LinearLayout
+        android:id="@+id/weekDaysLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayoutTop"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="50dp"
+        android:gravity="center_vertical">
+
+
+        <TextView
+            android:id="@+id/Monday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="Monday"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Tuesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Tuesday"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/Wednesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginRight="3dp"
+            android:text="Wednesday"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Thursday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Thursday"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Friday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="Friday"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Saturday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:text="Saturday"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Sunday"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Sunday"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/Axis0x0"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/weekDaysLinearLayout"
+        android:layout_toStartOf="@id/Axis7y7"
+        android:layout_toLeftOf="@id/Axis7y7"
+        android:layout_marginTop="2dp"
+        android:background="@color/black"/>
+
+    <View
+        android:id="@+id/Axis0y0"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/hours1"
+        android:layout_marginLeft="5dp"
+        android:layout_alignTop="@+id/Axis0"
+        android:layout_alignBottom="@+id/Axis4x4"
+         android:background="@color/black"/>
+
+
+    <LinearLayout
+        android:id="@+id/hours1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/Axis0x0"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp">
+
+        <TextView
+            android:id="@+id/time1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="09:30"
+            android:textStyle="bold|italic"/>
+        <TextView
+            android:id="@+id/time2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:30"
+            android:textStyle="bold|italic"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/Axis1x1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/hours1"
+        android:layout_toStartOf="@id/Axis7y7"
+        android:layout_toLeftOf="@id/Axis7y7"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="2dp"
+        android:background="@color/black"/>
+
+    <LinearLayout
+        android:id="@+id/hours2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/Axis1x1"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp">
+
+        <TextView
+            android:id="@+id/time3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11:30"
+            android:textStyle="bold|italic"/>
+        <TextView
+            android:id="@+id/time4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12:30"
+            android:textStyle="bold|italic"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/Axis2x2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/hours2"
+        android:layout_toStartOf="@id/Axis7y7"
+        android:layout_toLeftOf="@id/Axis7y7"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="2dp"
+        android:background="@color/black"/>
+
+    <LinearLayout
+        android:id="@+id/hours3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/Axis2x2"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp">
+
+        <TextView
+            android:id="@+id/time5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13:30"
+            android:textStyle="bold|italic"/>
+        <TextView
+            android:id="@+id/time6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="14:30"
+            android:textStyle="bold|italic"/>
+
+    </LinearLayout>
+    <View
+        android:id="@+id/Axis3x3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/hours3"
+        android:layout_toStartOf="@id/Axis7y7"
+        android:layout_toLeftOf="@id/Axis7y7"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="2dp"
+        android:background="@color/black"/>
+
+    <LinearLayout
+        android:id="@+id/hours4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/Axis3x3"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp">
+
+        <TextView
+            android:id="@+id/time7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15:30"
+            android:textStyle="bold|italic"/>
+        <TextView
+            android:id="@+id/time8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="16:30"
+            android:textStyle="bold|italic"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/weekSubject1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/Axis0x0"
+        android:layout_toRightOf="@id/hours1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            android:id="@+id/t1d1"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:textSize="12dp"
+            android:text="@string/Subject"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/Axis1y1"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/weekSubject1"
+        android:layout_alignTop="@+id/Axis0"
+        android:layout_alignBottom="@+id/Axis4x4"
+        android:layout_marginLeft="10dp"
+        android:background="@color/black"/>
+
+    <LinearLayout
+        android:id="@+id/weekSubject2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/Axis0x0"
+        android:layout_toRightOf="@id/weekSubject1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            android:id="@+id/t1d2"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:textSize="12dp"
+            android:text="@string/Subject"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/Axis2y2"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/weekSubject2"
+        android:layout_alignTop="@+id/Axis0"
+        android:layout_alignBottom="@+id/Axis4x4"
+        android:background="@color/black"/>
+
+    <LinearLayout
+        android:id="@+id/weekSubject3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/Axis0x0"
+        android:layout_toRightOf="@id/weekSubject2"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            android:id="@+id/t1d3"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:textSize="12dp"
+            android:text="@string/Subject"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/Axis3y3"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/weekSubject3"
+        android:layout_alignTop="@+id/Axis0"
+        android:layout_alignBottom="@+id/Axis4x4"
+        android:layout_marginLeft="5dp"
+        android:background="@color/black"/>
+
+    <LinearLayout
+        android:id="@+id/weekSubject4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/Axis0x0"
+        android:layout_toRightOf="@id/weekSubject3"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            android:id="@+id/t1d4"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="12dp"
+            android:text="@string/Subject"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/Axis4y4"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/weekSubject4"
+        android:layout_alignTop="@+id/Axis0"
+        android:layout_alignBottom="@+id/Axis4x4"
+        android:layout_marginLeft="5dp"
+        android:background="@color/black"/>
+
+    <LinearLayout
+        android:id="@+id/weekSubject5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/Axis0x0"
+        android:layout_toRightOf="@id/weekSubject4"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            android:id="@+id/t1d5"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="12dp"
+            android:text="@string/Subject"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/Axis5y5"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/weekSubject5"
+        android:layout_alignTop="@+id/Axis0"
+        android:layout_alignBottom="@+id/Axis4x4"
+        android:layout_marginLeft="3dp"
+        android:background="@color/black"/>
+
+    <LinearLayout
+        android:id="@+id/weekSubject6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/Axis0x0"
+        android:layout_toRightOf="@id/weekSubject5"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            android:id="@+id/t1d6"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="12dp"
+            android:text="@string/Subject"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/Axis6y6"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/weekSubject6"
+        android:layout_alignTop="@+id/Axis0"
+        android:layout_alignBottom="@+id/Axis4x4"
+        android:layout_marginLeft="1dp"
+        android:background="@color/black"/>
+    <LinearLayout
+        android:id="@+id/weekSubject7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/Axis0x0"
+        android:layout_toRightOf="@id/weekSubject6"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            android:id="@+id/t1d7"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="12dp"
+            android:text="@string/Subject"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/week1Subject1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/Axis1x1"
+        android:layout_toRightOf="@id/hours2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            android:id="@+id/t2d1"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:textSize="12dp"
+            android:text="@string/Subject"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/week1Subject2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/Axis1x1"
+        android:layout_toRightOf="@id/week1Subject1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            android:id="@+id/t2d2"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:textSize="12dp"
+            android:text="@string/Subject"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/week1Subject3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/Axis1x1"
+        android:layout_toRightOf="@id/week1Subject2"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            android:id="@+id/t2d3"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:textSize="12dp"
+            android:text="@string/Subject"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/week1Subject4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/Axis1x1"
+        android:layout_toRightOf="@id/week1Subject3"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            android:id="@+id/t2d4"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:textSize="12dp"
+            android:text="@string/Subject"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/week1Subject5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/Axis1x1"
+        android:layout_toRightOf="@id/week1Subject4"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            android:id="@+id/t2d5"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:textSize="12dp"
+            android:text="@string/Subject"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/week1Subject6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/Axis1x1"
+        android:layout_toRightOf="@id/week1Subject5"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            android:id="@+id/t2d6"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:textSize="12dp"
+            android:text="@string/Subject"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/week1Subject7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/Axis1x1"
+        android:layout_toRightOf="@id/week1Subject6"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            android:id="@+id/t2d7"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:textSize="12dp"
+            android:text="@string/Subject"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/week2Subject1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/Axis2x2"
+        android:layout_toRightOf="@id/hours3"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            android:id="@+id/t3d1"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:textSize="12dp"
+            android:text="@string/Subject"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/week2Subject2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/Axis2x2"
+        android:layout_toRightOf="@id/week2Subject1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            android:id="@+id/t3d2"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:textSize="12dp"
+            android:text="@string/Subject"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/week2Subject3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/Axis2x2"
+        android:layout_toRightOf="@id/week2Subject2"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            android:id="@+id/t3d3"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:textSize="12dp"
+            android:text="@string/Subject"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/week2Subject4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/Axis2x2"
+        android:layout_toRightOf="@id/week2Subject3"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            android:id="@+id/t3d4"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:textSize="12dp"
+            android:text="@string/Subject"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/week2Subject5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/Axis2x2"
+        android:layout_toRightOf="@id/week2Subject4"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            android:id="@+id/t3d5"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:textSize="12dp"
+            android:text="@string/Subject"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/week2Subject6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/Axis2x2"
+        android:layout_toRightOf="@id/week2Subject5"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            android:id="@+id/t3d6"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:textSize="12dp"
+            android:text="@string/Subject"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/week2Subject7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/Axis2x2"
+        android:layout_toRightOf="@id/week2Subject6"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            android:id="@+id/t3d7"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:textSize="12dp"
+            android:text="@string/Subject"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/week3Subject1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/Axis3x3"
+        android:layout_toRightOf="@id/hours4"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            android:id="@+id/t4d1"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:textSize="12dp"
+            android:text="@string/Subject"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/week3Subject2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/Axis3x3"
+        android:layout_toRightOf="@id/week3Subject1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            android:id="@+id/t4d2"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:textSize="12dp"
+            android:text="@string/Subject"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/week3Subject3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/Axis3x3"
+        android:layout_toRightOf="@id/week3Subject2"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            android:id="@+id/t4d3"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:textSize="12dp"
+            android:text="@string/Subject"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/week3Subject4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/Axis3x3"
+        android:layout_toRightOf="@id/week3Subject3"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            android:id="@+id/t4d4"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:textSize="12dp"
+            android:text="@string/Subject"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/week3Subject5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/Axis3x3"
+        android:layout_toRightOf="@id/week3Subject4"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            android:id="@+id/t4d5"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:textSize="12dp"
+            android:text="@string/Subject"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/week3Subject6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/Axis3x3"
+        android:layout_toRightOf="@id/week3Subject5"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            android:id="@+id/t4d6"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:textSize="12dp"
+            android:text="@string/Subject"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/week3Subject7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/Axis3x3"
+        android:layout_toRightOf="@id/week3Subject6"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="3dp">
+        <TextView
+            android:id="@+id/t4d7"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:textSize="12dp"
+            android:text="@string/Subject"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/Axis7y7"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/weekSubject7"
+        android:layout_alignTop="@+id/Axis0"
+        android:layout_alignBottom="@+id/Axis4x4"
+        android:background="@color/black"/>
+    <View
+        android:id="@+id/Axis4x4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/hours4"
+        android:layout_toStartOf="@id/Axis7y7"
+        android:layout_toLeftOf="@id/Axis7y7"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="2dp"
+        android:background="@color/black"/>
+
+    <View
+        android:id="@+id/Axis0y"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/Axis0x0"
+        android:layout_alignBottom="@+id/Axis4x4"
+        android:background="@color/black"/>
+
+ </RelativeLayout>

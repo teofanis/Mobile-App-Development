@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.bookActivity"
+    android:layout_weight="100">
+
+
+    <LinearLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:background="#105711 "
+        android:gravity="center_vertical|center_horizontal">
+    <TextView
+        android:id="@+id/titles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:textAppearance="@style/Base.TextAppearance.Widget.AppCompat.Toolbar.Title"
+        android:text="@string/PlaceHolder"
+        />
+
+
+
+    </LinearLayout>
+
+<RelativeLayout
+    android:id="@+id/secondParent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    android:padding="5dp"
+    android:layout_below="@id/header_layout">
+
+    <ImageView
+        android:id="@+id/bookLogo"
+        android:layout_width="123dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/header_layout"
+        />
+
+    <TextView
+        android:id="@+id/bookDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/bookLogo"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="@string/Description"/>
+    <TextView
+        android:id="@+id/tvBookISBN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bookDescription"
+        android:layout_toRightOf="@id/bookLogo"
+        android:layout_marginLeft="10dp"
+        android:textSize="10dp"
+        android:textStyle="italic|bold"
+        android:text="Book _ ISBN"/>
+
+    <TextView
+        android:id="@+id/bookAuthorHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bookLogo"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="2dp"
+        android:text="@string/Written"
+        android:textSize="10dp"/>
+    <TextView
+        android:id="@+id/bookAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bookLogo"
+        android:layout_toRightOf="@id/bookAuthorHolder"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="2dp"
+        android:text="@string/PlaceHolder"
+        android:textSize="10dp"/>
+
+    <TextView
+        android:id="@+id/availability"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bookAuthorHolder"
+        android:layout_toLeftOf="@id/bookDescText"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="15dp"
+        android:textSize="10dp"
+        android:textColor="@color/green"
+        android:text="This item is available!"/>
+
+    <TextView
+        android:id="@+id/bookDescText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/bookLogo"
+        android:layout_below="@+id/bookDescription"
+        android:text="@string/Lorem"
+        android:textStyle="italic"
+        android:textSize="12dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bookDescText"
+        android:gravity="center_vertical|center_horizontal"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Light.Widget.PopupMenu.Large"
+        android:textStyle="bold"
+        android:text="@string/Reviews"/>
+
+    <Button
+        android:id="@+id/btn_reserve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/availability"
+        android:layout_toLeftOf="@id/bookDescText"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/buttonshape"
+        android:text="@string/Reserve"
+        android:textAllCaps="false"
+        android:textColor="@color/white"/>
+    <Button
+        android:id="@+id/btn_review"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/bookDescription"
+        android:layout_marginLeft="50dp"
+        android:layout_above="@id/bookDescText"
+        android:background="@drawable/buttonshape"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Review"
+        android:textSize="8dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"/>
+</RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RecyclerViewReview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/secondParent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        />
+
+
+</RelativeLayout>

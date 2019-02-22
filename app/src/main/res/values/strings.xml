@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">RoehamptonQAapp</string>
+    <string name="btn_Login">Login</string>
+    <string name="btn_Logout">Logout</string>
+    <string name="tv_Logged_As">Logged as: </string>
+    <string name="forgottenPassword">Forgotten Password ?</string>
+    <string name="tv_USERNAME_LOGGED">*LOGGED USER NAME* </string>
+    <string name="tv_Welcome_Title_Dashboard">Welcome to Roehampton QA\'s Student Dashboard !</string>
+    <string name="tv_Register_Title">Registration</string>
+    <string name="et_Student_ID">Email</string>
+    <string name="et_First_Name">First Name</string>
+    <string name="et_Surname">Surname</string>
+    <string name="et_group">Group</string>
+    <string-array name="groups">
+        <item>Select a group...</item>
+        <item>ROU456WL</item>
+        <item>ROU0111SF</item>
+        <item>ROU0112GE</item>
+        <item>ROU123PA</item>
+    </string-array>
+    <string name="btn_Register">Register</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="email">Email</string>
+    <string name="number_of_attempts_left">Number of attempts left:</string>
+    <string name="TimeTable">Timetable for group</string>
+    <string name="Subject"></string>
+    <string-array name="category">
+        <item>Show All</item>
+        <item>Programming</item>
+        <item>Business</item>
+        <item>Networking</item>
+        <item>Design</item>
+        <item>Analytics</item>
+        <item>Mathematics</item>
+    </string-array>
+    <string name="PlaceHolder">PlaceHolder! </string>
+    <string name="Description">Description :</string>
+    <string name="Written">Written by:</string>
+    <string name="Reserve">Reserve</string>
+    <string name="Reviews">Reviews :</string>
+    <string name="twoHundred">Lorem ipsum dolor sit amet, sea habemus gloriatur ei, mazim solet latine e. Tractatos contentiones voluptatibus id eos. Id consequat assueverit his, dsadas.  Tras habemus gloriatur ei, mazim solet la.</string>
+    <string name="Lorem">Lorem ipsum dolor sit amet, sea habemus gloriatur ei, mazim solet latine e. Tractatos contentiones voluptatibus id eos. Id consequat assueverit his, et liber suscipiantur voluptatibus cum, nec an percipit maluisset. Eam ut melius deserunt dissentiunt, sit homero legendos te. Torquatos definitiones pro in, et duo stet atqui singulis. Id meliore veritus constituam vim, facilisis deterruisset per id.
+</string>
+    <string-array name="settingOption">
+        <item>Select...</item>
+        <item>Email</item>
+        <item>Password</item>
+    </string-array>
+    <string-array name="orderBy">
+        <item>Ascending order</item>
+        <item>Descending order</item>
+    </string-array>
+    <string-array name="FloorArray">
+        <item>Student Services</item>
+        <item>Student Finance</item>
+        <item>Student Well-being</item>
+        <item>Floors</item>
+    </string-array>
+    <string-array name="FloorSelect">
+        <item><b>First Floor</b></item>
+        <item>Room 101</item>
+        <item>Room 102</item>
+        <item>Room 103</item>
+        <item><b>Second Floor</b></item>
+        <item>201</item>
+        <item>202/203</item>
+        <item>204</item>
+        <item>205</item>
+        <item><b>Third Floor</b></item>
+        <item>301</item>
+        <item>302</item>
+        <item>303</item>
+        <item>304</item>
+        <item>305</item>
+        <item>306</item>
+        <item><b>Ground Floor</b></item>
+        <item>G01</item>
+        <item>G02</item>
+        <item><b>Lower Ground Floor 1</b></item>
+        <item>LG1</item>
+        <item>LG2/LG3</item>
+        <item>LG4</item>
+        <item>LG5</item>
+        <item><b>Lower Ground Floor 2</b></item>
+        <item>Auditorium 1</item>
+        <item>Auditorium 2</item>
+    </string-array>
+</resources>
