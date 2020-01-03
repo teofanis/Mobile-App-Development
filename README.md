@@ -21,5 +21,5 @@ Load it on the emulator and delete the folder.
 **************************
 
 P.S 
-Play around with it, if anyone wishes to know more, I have the full submission on my linkedIn, or I can send it over email, whichever is easier.
+If anyone wishes to know more, I have the full submission on my linkedIn, or I can send it over email, whichever is easier.
 
